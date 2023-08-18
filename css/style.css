@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  text-align: center;
+}
+
+body {
+  padding:50px;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#777;
+  font-weight:300;
+  text-align: center;
+}
+
+h1, h2 {
+  color:#222;
+  margin:0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  margin: 25px 0 0 0;
+  font-size:28px;
+  line-height: 30px;
+}
+
+h1 > a {
+}
+
+h1 > a > img {
+  width: 19px;
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a, a:visited {
+  color: #00a;
+  color: #39c;
+  text-decoration: none;
+}
+
+section, article, header#intro {
+  margin: 0px;
+}
+
+section > header {
+  text-align: left;
+}
+
+section a figure {
+  text-align: left;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+section a figure .image {
+  width: 100%;
+  padding-bottom: 60%;
+  margin: 0;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border: 1px solid #efefef;
+}
+
+section a:hover figure img {
+}
+
+section figcaption {
+  margin: 7px 0;
+  font-size: 0.9em;
+}
+
+section#visualizations a {
+  text-decoration: none;
+  font-weight:300;
+  color: #39c !important;
+}
+
+section#visualizations ul {
+  /*text-align: left;  # This shifts the cards to the left*/
+}
+
+section#visualizations > ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 30px 2% 0 0;
+  width: 22%;
+}
+
+nav {
+  text-align: right;
+}
+
+header.address, footer {
+  margin: 10px 0;
+  font-size: 0.7em;
+  color: #777;
+}
+
+header.address img, footer img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Three columns only */
+@media screen and (max-width: 1300px) {
+  section#visualizations > ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    margin: 2%;
+  }
+}
+
+/* Two columns only */
+@media screen and (max-width: 900px) {
+  section#visualizations > ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin: 30px 2% 0 0;
+  }
+}
+
+/* One column only */
+@media screen and (max-width: 600px) {
+  section#visualizations > ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 98%;
+    margin: 30px 2% 0 0;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  section#visualizations > ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 98%;
+    margin: 30px 2% 0 0;
+  }
+}
+
